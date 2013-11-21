@@ -46,6 +46,8 @@ PRODUCT_PACKAGES += Torch
 PRODUCT_COPY_FILES += \
         device/lge/geefhd-common/ramdisk/init.geefhd.rc:root/init.geefhd.rc \
         device/lge/geefhd-common/ramdisk/init.geefhd.usb.rc:root/init.geefhd.usb.rc \
+        device/lge/geefhd-common/ramdisk/init.lge.cmm.usb.sh:root/init.lge.cmm.usb.sh \
+        device/lge/geefhd-common/ramdisk/init.lge.usb.sh:root/init.lge.usb.sh \
         device/lge/geefhd-common/ramdisk/init.qcom.sh:root/init.qcom.sh \
         device/lge/geefhd-common/ramdisk/fstab.geefhd:root/fstab.geefhd
 
@@ -86,7 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/lge/geefhd-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
 	device/lge/geefhd-common/configs/media_codecs.xml:system/etc/media_codecs.xml 
-
 
 # Non-Ramdisk Init Scripts
 PRODUCT_COPY_FILES += \

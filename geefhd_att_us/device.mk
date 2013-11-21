@@ -20,11 +20,6 @@ $(call inherit-product-if-exists, vendor/lge/geefhd/geefhd-vendor.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS := device/lge/geefhd_att_us/overlay
 
-
-PRODUCT_COPY_FILES += \
-    device/lge/geefhd_att_us/config/BCM4334B0_002.001.013.0271.0333.hcd:system/etc/firmware/BCM4334B0_002.001.013.0271.0333.hcd \
-    device/lge/geefhd_att_us/config/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf 
-
 PRODUCT_PACKAGES += \
 	libbt-vendor
 
@@ -56,7 +51,10 @@ PRODUCT_COPY_FILES += \
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/geefhd_att_us/configs/gps.conf:system/etc/gps.conf
-
+# BT configuration	
+PRODUCT_COPY_FILES += \
+        device/lge/geefhd_att_us/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf 
+	
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/geefhd_att_us/ramdisk/init.geefhd_att_us.rc:root/init.geefhd_att_us.rc \

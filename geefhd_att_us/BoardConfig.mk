@@ -28,7 +28,7 @@ TARGET_KERNEL_SOURCE := /home/kernel/f240_42
 -include device/lge/geefhd-common/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := geefhd,geefhd_att_us,gkatt,e980,e988,f240
+TARGET_OTA_ASSERT_DEVICE := geefhd,geefhd_att_us,gkatt,e980,e988,gpro
 
 # inherit from the proprietary version
 -include vendor/lge/geefhd/BoardConfigVendor.mk
