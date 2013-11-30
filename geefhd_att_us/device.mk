@@ -37,11 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
 
-# Telephony Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.default_network=0
-
 # Vold configuration
 PRODUCT_COPY_FILES += \
     device/lge/geefhd_att_us/vold.fstab:system/etc/vold.fstab
@@ -49,6 +44,7 @@ PRODUCT_COPY_FILES += \
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/geefhd_att_us/configs/gps.conf:system/etc/gps.conf
+
 # BT configuration	
 PRODUCT_COPY_FILES += \
         device/lge/geefhd_att_us/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf 

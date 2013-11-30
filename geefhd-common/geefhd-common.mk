@@ -197,8 +197,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         rild.libpath=/system/lib/libril-qc-qmi-1.so \
-        telephony.lteOnCdmaDevice=0 \
-        ro.telephony.default_network=9 \
+        ro.telephony.default_network=0 \
         telephony.lteOnGsmDevice=1
 
 #Upto 3 layers can go through overlays
