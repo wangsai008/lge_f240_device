@@ -149,7 +149,11 @@ endif
 
 # Commands to migrate prefs from com.android.nfc3 to com.android.nfc
 PRODUCT_COPY_FILES += \
-        packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt
+	packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt
+
+# NFC Firmware
+PRODUCT_COPY_FILES += \
+    device/lge/geefhd-common/nfc/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \
