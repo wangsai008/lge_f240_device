@@ -37,13 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
 
-# Telephony Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnCdmaDevice=0 \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.default_network=9 \
-    ro.ril.def.preferred.network=9
-
 # Vold configuration
 PRODUCT_COPY_FILES += \
     device/lge/geefhd_att_us/vold.fstab:system/etc/vold.fstab
@@ -51,6 +44,7 @@ PRODUCT_COPY_FILES += \
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/geefhd_att_us/configs/gps.conf:system/etc/gps.conf
+
 # BT configuration	
 PRODUCT_COPY_FILES += \
         device/lge/geefhd_att_us/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf 
@@ -59,10 +53,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/geefhd_att_us/ramdisk/init.geefhd_att_us.rc:root/init.geefhd_att_us.rc \
     device/lge/geefhd_att_us/ramdisk/ueventd.geefhd_att_us.rc:root/ueventd.geefhd_att_us.rc
-
-# NFC Firmware
-PRODUCT_COPY_FILES += \
-    device/lge/geefhd_att_us/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
